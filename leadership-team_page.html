@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Leadership Team | One World Rental</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0b1220;
+    --blue:#0093d1;
+    --blue-dark:#055fc4;
+    --cyan:#00bbf0;
+    --slate:#64748b;
+    --slate-light:#94a3b8;
+    --bg-light:#f8fafc;
+    --border:#e2e8f0;
+    --max-w:1440px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--navy);
+    background:#fff;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{text-decoration:none;color:inherit;}
+  ul{list-style:none;}
+  button{font-family:inherit;cursor:pointer;border:none;}
+
+  .wrap{max-width:var(--max-w);margin:0 auto;padding:0 40px;}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:16px;letter-spacing:-0.02em;
+    padding:20px 48px;border-radius:8px;transition:transform .15s ease, opacity .15s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-1px);opacity:.92;}
+  .btn-primary{background:var(--blue);color:#fff;}
+  .btn-white{background:#fff;color:var(--navy);}
+  .btn-outline{background:transparent;color:#fff;border:2px solid #fff;}
+  .btn-ghost{background:var(--bg-light);color:var(--blue);padding:20px 48px;}
+
+  /* ===== NAV ===== */
+  .site-nav{
+    background:var(--navy);position:sticky;top:0;z-index:100;
+  }
+  .site-nav .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    height:104px;
+  }
+  .site-nav .logo img{height:30px;width:auto;}
+  .nav-links{display:flex;align-items:center;gap:32px;flex-wrap:wrap;}
+  .nav-links a{color:#fff;font-size:15px;font-weight:500;opacity:.9;transition:opacity .15s;}
+  .nav-links a:hover{opacity:1;color:var(--blue);}
+  .nav-cta{display:flex;align-items:center;gap:16px;}
+  .nav-cta .btn{padding:13px 24px;font-size:15px;border-radius:6px;}
+  .nav-phone{
+    display:flex;align-items:center;justify-content:center;
+    width:48px;height:48px;border-radius:6px;background:var(--blue);color:#fff;
+    font-size:18px;
+  }
+  .nav-toggle{display:none;background:none;color:#fff;font-size:28px;line-height:1;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;overflow:hidden;
+    min-height:450px;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;padding:96px 40px;
+    background:
+      linear-gradient(180deg, rgba(2,15,43,.85) 0%, rgba(3,27,78,.55) 40%, rgba(2,15,43,.92) 100%),
+      url(https://i.postimg.cc/G20RzqwR/hero-image.jpg) center/cover no-repeat;
+    background-blend-mode:normal;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:#fff;
+  }
+  .hero-inner{max-width:auto;display:flex;flex-direction:column;align-items:center;gap:32px;}
+  .hero h1{
+    font-size:clamp(36px,6vw,80px);
+    font-weight:800;letter-spacing:-0.03em;line-height:1.2;
+    background:linear-gradient(137deg,#fff 0%,#fff 48%,#9ca3af 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p{font-size:18px;font-weight:100;color:#fff;max-width:680px;letter-spacing:-0.02em;}
+  .hero-actions{display:flex;gap:24px;1flex-wrap:wrap;justify-content:center;}
+
+  /* ===== STATS ===== 
+  .stats{background:var(--navy);padding:96px 40px;}
+  .stats-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:96px;align-items:center;}
+  .stats-heading{display:flex;flex-direction:column;align-items:center;gap:16px;}
+  .stats-heading h2{color:#fff;font-size:clamp(28px,4vw,48px);font-weight:700;text-align:center;}
+  .stats-heading .rule{width:96px;height:4px;background:var(--blue);}
+  .stats-grid{display:flex;gap:48px;width:100%;justify-content:center;flex-wrap:wrap;}
+  .stat{flex:1 1 200px;display:flex;flex-direction:column;align-items:center;gap:8px;min-width:160px;}
+  .stat .num{font-size:clamp(36px,5vw,64px);font-weight:900;letter-spacing:-0.02em;color:#fff;}
+  .stat .num.accent{color:var(--blue);}
+  .stat .label{font-size:18px;font-weight:500;color:var(--slate-light);} */
+
+  /* ===== SECTION SHELL ===== */
+  section{padding:96px 40px;}
+  .section-light{background:#fff;}
+  .section-alt{background:var(--bg-light);}
+  .section-inner{max-width:1200px;margin:0 auto;}
+
+  .section-head{max-width:900px;margin-bottom:64px;}
+  .section-head h2{font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-0.03em;margin-bottom:24px;}
+  .section-head p{font-size:18px;font-weight:100;color:var(--slate);letter-spacing:-0.02em;max-width:900px;white-space:nowrap;}
+
+  /* ===== TEAM GRID ===== */
+  .team-filters{display:flex;justify-content:flex-start;gap:12px;flex-wrap:wrap;margin:-24px 0 48px;}
+  .team-filter{
+    background:#f1f5f9;color:var(--slate);border:1px solid transparent;border-radius:999px;
+    padding:10px 18px;font-size:13px;font-weight:600;line-height:1.2;transition:background .15s ease,color .15s ease,border-color .15s ease;
+  }
+  .team-filter:hover,.team-filter[aria-pressed="true"]{background:var(--blue);color:#fff;border-color:var(--blue);}
+  .team-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:48px 32px;
+  }
+  .team-card .photo{
+    position:relative;border-radius:16px;overflow:hidden;height:340px;
+    background:#e0ebf5;
+  }
+  .team-card .photo img{
+    width:100%;height:100%;object-fit:cover;object-position:top center;
+  }
+  .team-card .name-row{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:24px;
+  }
+  .team-card h3{font-size:24px;font-weight:700;letter-spacing:-0.02em;}
+  .team-card .linkedin{
+    width:40px;height:40px;border-radius:50%;
+    background:url('assets/Linkedin.png') center/contain no-repeat;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    font-size:0;
+    transition:transform .15s ease,opacity .15s ease;
+  }
+  .team-card .linkedin:hover{transform:translateY(-1px);opacity:.88;}
+  .team-card .linkedin img{width:100%;height:100%;object-fit:contain;}
+  .team-card .role{color:var(--blue);font-weight:500;font-size:18px;letter-spacing:-0.02em;padding-top:4px;}
+  .team-card .location{color:var(--slate);font-weight:400;font-size:16px;padding-top:4px;}
+  .scroll-reveal{opacity:0;transition:opacity .6s ease;}
+  .scroll-reveal.is-visible{opacity:1;}
+  @media (prefers-reduced-motion:reduce){
+    .scroll-reveal{transition:none;}
+  }
+
+  .load-more{display:flex;justify-content:center;padding-top:64px;}
+
+  /* ===== GLOBAL REACH ===== */
+  .global-reach .section-inner{
+    display:flex;gap:48px;align-items:center;flex-wrap:wrap;
+  }
+  .global-reach .copy{flex:1 1 420px;min-width:300px;}
+  .global-reach .copy h2{font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-0.03em;line-height:1.15;margin-bottom:24px;}
+  .global-reach .copy > p{color:var(--slate);font-size:18px;letter-spacing:-0.02em;line-height:1.5;margin-bottom:24px;}
+  .region-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;}
+  .region{border-left:4px solid var(--blue);padding:8px 0 8px 24px;}
+  .region h4{font-size:18px;font-weight:700;margin-bottom:4px;}
+  .region p{color:var(--slate);font-size:16px;}
+
+  .video-frame{
+    flex:1 1 560px;min-width:300px;position:relative;height:auto;aspect-ratio:16 / 9.5;border-radius:8px;overflow:hidden;
+    background:#606060;display:flex;align-items:center;justify-content:center;
+  }
+  .video-frame img.bg,
+  .video-frame video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1;}
+  .video-frame img.bg,
+  .video-frame video.bg,
+  .tech-experience .img-frame img{
+    transform:translate3d(0,calc(var(--parallax-offset, 0) * 1px),0) scale(1.03);
+    will-change:transform;
+  }
+  @media (prefers-reduced-motion:reduce){
+    .video-frame img.bg,
+    .video-frame video.bg,
+    .tech-experience .img-frame img{transform:none;}
+  }
+  .play-btn{
+    position:relative;z-index:2;width:106px;height:106px;border-radius:50%;
+    background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.8);
+    display:flex;align-items:center;justify-content:center;color:#fff;font-size:0;
+  }
+  .play-btn::before{
+    content:"";display:block;width:0;height:0;
+    border-top:16px solid transparent;border-bottom:16px solid transparent;
+    border-left:26px solid #fff;margin-left:6px;
+  }
+
+  /* ===== TECH/EXPERIENCE ===== */
+  /* .tech-experience .section-inner{display:flex;gap:80px;align-items:center;flex-wrap:wrap;}
+  .tech-experience .img-frame{
+    flex:1 1 420px;min-width:300px;border-radius:24px;overflow:hidden;height:500px;
+    box-shadow:0 25px 50px -12px rgba(0,0,0,.25);
+  }
+  .tech-experience .img-frame img{width:100%;height:100%;object-fit:cover;}
+  .tech-experience .copy{flex:1 1 420px;min-width:300px;}
+  .tech-experience h2{font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-0.03em;line-height:1.2;margin-bottom:24px;}
+  .tech-experience h2 .accent{color:var(--blue);}
+  .tech-experience p{color:var(--slate);font-size:18px;letter-spacing:-0.02em;margin-bottom:24px;}
+  .discover-link{display:flex;align-items:center;gap:16px;}
+  .discover-link .circle{
+    width:56px;height:56px;border-radius:50%;background:var(--blue);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;
+  }
+  .discover-link span{font-weight:700;font-size:18px;} */
+
+  /* ===== VALUES ===== */
+  /* .values{background:var(--bg-light);}
+  .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:48px;}
+  .value{position:relative;}
+  .value .num{
+    font-size:100px;font-weight:900;color:var(--navy);opacity:.05;line-height:1;letter-spacing:-0.05em;
+  }
+  .value h3{font-size:30px;font-weight:700;letter-spacing:-0.02em;margin-top:-42px;margin-bottom:16px;}
+  .value p{color:var(--slate);font-size:16px;letter-spacing:-0.02em;} */
+
+  /* ===== CAREERS CTA (dark, image bg) ===== */
+  .careers-cta{
+    position:relative;overflow:hidden;color:#fff;text-align:center;
+    display:flex;align-items:center;justify-content:center;min-height:600px;padding:96px 40px;
+    background:
+      linear-gradient(rgba(11,18,32,.8),rgba(11,18,32,.8)),
+      url(https://i.postimg.cc/yY78HB6d/Bottom-CTA-Image.jpg) center/cover no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .careers-cta .inner{max-width:900px;display:flex;flex-direction:column;align-items:center;gap:24px;}
+  .careers-cta h2{font-size:clamp(32px,6vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1;}
+  .careers-cta p{font-size:18px;letter-spacing:-0.02em;white-space:nowrap;}
+  .careers-cta .actions{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;padding-top:24px;}
+
+  /* ===== FINAL CTA STRIP ===== */
+  /* .final-cta{
+    background:var(--navy);border-top:1px solid rgba(255,255,255,.1);padding:96px 40px;
+
+  }
+  .final-cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;}
+  .final-cta h2{color:#fff;font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.02em;line-height:1.25;} */
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--bg-light);padding:80px 40px 0;}
+  .footer-top{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;
+    border-bottom:1px solid var(--border);padding-bottom:80px;
+  }
+  .footer-brand img{height:30px;width:auto;margin-bottom:16px;}
+  .footer-brand p{color:var(--slate);font-size:16px;line-height:1.6;margin-bottom:24px;}
+  .socials{display:flex;gap:16px;}
+  .socials a{
+    width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+    color:var(--slate);transition:color .15s;
+  }
+  .socials a:hover{color:var(--blue);}
+  .socials a svg{width:22px;height:22px;fill:currentColor;display:block;}
+  .footer-col h4{font-size:16px;font-weight:700;margin-bottom:24px;}
+  .footer-col ul{display:flex;flex-direction:column;gap:16px;}
+  .footer-col a, .footer-col li{color:var(--slate);font-size:16px;}
+  .footer-contact li{display:flex;align-items:center;gap:8px;color:var(--slate);font-size:16px;}
+  .footer-contact li svg{width:18px;height:18px;flex:0 0 18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .footer-bottom{
+    max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+    padding:40px 0;gap:24px;flex-wrap:wrap;
+  }
+  .footer-bottom p{color:var(--slate-light);font-size:14px;}
+  .footer-bottom .links{display:flex;gap:32px;}
+  .footer-bottom .links a{color:var(--slate-light);font-size:14px;}
+  .footer-bottom .links a:hover{color:var(--blue);}
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:1024px){
+    .team-grid{grid-template-columns:repeat(2,1fr);}
+    .values-grid{grid-template-columns:repeat(2,1fr);gap:64px 32px;}
+    .footer-top{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:860px){
+    .nav-links{display:none;}
+    .nav-toggle{display:block;}
+    .region-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:600px){
+    section{padding:64px 20px;}
+    .wrap{padding:0 20px;}
+    .team-grid{grid-template-columns:1fr;}
+    .team-filters{justify-content:flex-start;margin:-16px 0 40px;gap:8px;}
+    .team-filter{font-size:12px;padding:9px 13px;}
+    .footer-top{grid-template-columns:1fr;}
+    .final-cta .wrap{flex-direction:column;text-align:center;}
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="site-nav">
+  <div class="wrap">
+    <a class="logo" href="https://oneworldrental.com/">
+      <img src="https://i.postimg.cc/ZqQL6nc2/oneworld-rental-white.jpg" alt="One World Rental">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="https://oneworldrental.com/about-us">About Us</a>
+      <a href="https://oneworldrental.com/solutions">Solutions</a>
+      <a href="https://oneworldrental.com/ipad-rental">iPad Rental</a>
+      <a href="https://oneworldrental.com/laptop-rental">Laptop Rental</a>
+      <a href="https://oneworldrental.com/meet-the-team">Our Leadership Team</a>
+      <a href="https://oneworldrental.com/contact-us">Contact Us</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="https://oneworldrental.com/contact-us">Request a Quote</a>
+      <a class="nav-phone" href="tel:+16027370011" aria-label="Call us">☎</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Our Leadership Team
+    <p>Experienced Leadership. Global Expertise</p>
+    <!-- <div class="hero-actions">
+      <a class="btn btn-primary" href="https://oneworldrental.com/careers">Work With Us</a>
+      <a class="btn btn-outline" href="https://oneworldrental.com/contact-us">Get a Free Quote</a>
+    </div> -->
+  </div>
+</section>
+
+<!-- ===== STATS =====
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stats-heading">
+      <h2>One Team. A World of Expertise.</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat"><span class="num">60+</span><span class="label">Countries Served</span></div>
+      <div class="stat"><span class="num accent">24/7</span><span class="label">Support</span></div>
+      <div class="stat"><span class="num">550+</span><span class="label">Strong Team</span></div>
+      <div class="stat"><span class="num accent">20k+</span><span class="label">Valued Clients</span></div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ===== MEET OUR TEAM ===== -->
+<section class="section-light">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Meet the People Behind Our Success</h2>
+      <p>Our senior leadership team drives our global vision, empowers our people, and sets the standards that shape how we work.<br>With expertise across technology, events, and operations, they lead with a shared commitment to client success.</p>
+    </div>
+
+    <div class="team-filters" role="group" aria-label="Filter team members by region">
+      <button class="team-filter" type="button" data-filter="all" aria-pressed="true">ALL</button>
+      <button class="team-filter" type="button" data-filter="london" aria-pressed="false">London HQ</button>
+      <button class="team-filter" type="button" data-filter="emea" aria-pressed="false">EMEA (USA, Canada &amp; The Netherlands)</button>
+      <button class="team-filter" type="button" data-filter="apac" aria-pressed="false">APAC (Australia &amp; Singapore)</button>
+      <button class="team-filter" type="button" data-filter="mena" aria-pressed="false">MENA (UAE)</button>
+    </div>
+
+    <div class="team-grid">
+      <!-- Row 1 -->
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/pd0w6v9G/Kashif.png" alt="Kashif Din"></div>
+        <div class="name-row"><h3>Kashif Din</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/kashifdin/" target="_blank" rel="noopener noreferrer" aria-label="Kashif Din on LinkedIn">in</a> --></div>
+        <p class="role">CEO</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/FKstpzKP/Mike.png" alt="Mike Day"></div>
+        <div class="name-row"><h3>Mike Day</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/mike-day-owr/" target="_blank" rel="noopener noreferrer" aria-label="Mike Day on LinkedIn">in</a> --></div>
+        <p class="role">Regional Manager Asia Pacific</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/dV9PGrwN/Dewnie.png" alt="Dewnie Perera"></div>
+        <div class="name-row"><h3>Dewnie Perera</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/dewnie-perera/" target="_blank" rel="noopener noreferrer" aria-label="Dewnie Perera on LinkedIn">in</a> --></div>
+        <p class="role">Global Operations Manager</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/1t2LyKrH/Rifat.png" alt="Rifat Shah"></div>
+        <div class="name-row"><h3>Rifat Shah</h3><!-- <a class="linkedin" href="https://www.linkedin.com/company/oneworldrental-hiretabletsglobal" target="_blank" rel="noopener noreferrer" aria-label="Rifat Shah on LinkedIn">in</a> --></div>
+        <p class="role">Global Asset Controller</p>
+      </article>
+
+      <!-- Row 2 -->
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/g2pbwNFH/Alex.png" alt="Alex Collins"></div>
+        <div class="name-row"><h3>Alex Collins</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/alex-collins-553183232/" target="_blank" rel="noopener noreferrer" aria-label="Alex Collins on LinkedIn">in</a> --></div>
+        <p class="role">Head of Sales (EMEA &amp; NA)</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/kXKdXLZN/Chris.png" alt="Chris Player"></div>
+        <div class="name-row"><h3>Chris Player</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/christopher-player-015a11115/" target="_blank" rel="noopener noreferrer" aria-label="Chris Player on LinkedIn">in</a> --></div>
+        <p class="role">Sales Manager (Asia Pacific)</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/HktDbXdF/Hannah.png" alt="Hannah Grantham"></div>
+        <div class="name-row"><h3>Hannah Grantham</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/hannah-grantham-a15751206/" target="_blank" rel="noopener noreferrer" aria-label="Hannah Grantham on LinkedIn">in</a> --></div>
+        <p class="role">Staffing Commercial Lead</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/nLdyPxsG/Mitch.png" alt="Mitchell Pearce"></div>
+        <div class="name-row"><h3>Mitchell Pearce</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/mitchell-pearce/" target="_blank" rel="noopener noreferrer" aria-label="Mitchell Pearce on LinkedIn">in</a> --></div>
+        <p class="role">Staffing Operations Lead</p>
+      </article>
+
+      <!-- Row 3 -->
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/pTpwNS83/Nisantha.png" alt="Nisantha Jayakody"></div>
+        <div class="name-row"><h3>Nisantha Jayakody</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/nishantha-jayakody-873232209/" target="_blank" rel="noopener noreferrer" aria-label="Nisantha Jayakody on LinkedIn">in</a> --></div>
+        <p class="role">Finance Manager</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/d1LbMfry/Katy.png" alt="Katy King"></div>
+        <div class="name-row"><h3>Katy King</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/katy-king-99a0b1159/" target="_blank" rel="noopener noreferrer" aria-label="Katy King on LinkedIn">in</a> --></div>
+        <p class="role">Global Head of People</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/qvGV2y4S/Jon.png" alt="Jon Barratt"></div>
+        <div class="name-row"><h3>Jon Barratt</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/jon-barratt/" target="_blank" rel="noopener noreferrer" aria-label="Jon Barratt on LinkedIn">in</a> --></div>
+        <p class="role">Marketing Manager</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/L8SFqNKz/Danyal.png" alt="Danyal Sheikh"></div>
+        <div class="name-row"><h3>Danyal Sheikh</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/danyal-sheikh/" target="_blank" rel="noopener noreferrer" aria-label="Danyal Sheikh on LinkedIn">in</a> --></div>
+        <p class="role">Development Team Lead</p>
+      </article>
+
+      <!-- Row 4 -->
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/htnRJpRq/Hirushan.png" alt="Hirushan Siriwardhana"></div>
+        <div class="name-row"><h3>Hirushan Siriwardhana</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/hirushans/" target="_blank" rel="noopener noreferrer" aria-label="Hirushan Siriwardhana on LinkedIn">in</a> --></div>
+        <p class="role">Operations Manager Asia Pacific</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/0yv16cRS/Andy.png" alt="Andy Batten"></div>
+        <div class="name-row"><h3>Andy Batten</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/andy-batten-6a171679/" target="_blank" rel="noopener noreferrer" aria-label="Andy Batten on LinkedIn">in</a> --></div>
+        <p class="role">Senior Sales Account Manager</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/rm3vq9NQ/Thor.png" alt="Thor Denson"></div>
+        <div class="name-row"><h3>Thor Denson</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/thordenson/" target="_blank" rel="noopener noreferrer" aria-label="Thor Denson on LinkedIn">in</a> --></div>
+        <p class="role">Branch Lead</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/xTMSTB7R/Aaron.png" alt="Aaron Benarroch"></div>
+        <div class="name-row"><h3>Aaron Benarroch</h3><!-- <a class="linkedin" href="https://www.linkedin.com/company/oneworldrental-hiretabletsglobal" target="_blank" rel="noopener noreferrer" aria-label="Aaron Benarroch on LinkedIn">in</a> --></div>
+        <p class="role">Branch Lead</p>
+      </article>
+
+      <!-- Row 5 -->
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/jSh0yPR0/Julius.png" alt="Julius Manikas"></div>
+        <div class="name-row"><h3>Julius Manikas</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/julius-manikas-073a8619a/" target="_blank" rel="noopener noreferrer" aria-label="Julius Manikas on LinkedIn">in</a> --></div>
+        <p class="role">International Process<br>Trainer &amp; Branch Lead</p>
+      </article>
+
+      <article class="team-card">
+        <div class="photo"><img src="https://i.postimg.cc/Vvt2vbKg/Rex.png" alt="Rex Wee"></div>
+        <div class="name-row"><h3>Rex Wee</h3><!-- <a class="linkedin" href="https://www.linkedin.com/in/rex-wee-46844911b/" target="_blank" rel="noopener noreferrer" aria-label="Rex Wee on LinkedIn">in</a> --></div>
+        <p class="role">Branch Lead</p>
+      </article>
+    </div>
+
+    <!--
+    <div class="load-more">
+      <button class="btn btn-ghost" id="loadMoreBtn">Load More Team Members</button>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- ===== GLOBAL REACH ===== -->
+<section class="section-alt global-reach">
+  <div class="section-inner">
+    <div class="copy">
+      <h2>Global Reach.<br>Local Expertise.</h2>
+      <p>Our regional leaders and branch managers provide local expertise across key markets. Wherever your event takes place, our teams are ready to provide professional, on-the-ground support.</p>
+      <div class="region-grid">
+        <div class="region"><h4>15 Global locations</h4><p>serving clients across 60+ countries worldwide.</p></div>
+        <div class="region"><h4>500+ Strong team</h4><p>of local tech experts and event professionals.</p></div>
+        <!-- <div class="region"><h4>Asia Pacific</h4><p>Singapore, Melbourne, Seoul</p></div>
+        <div class="region"><h4>Middle East</h4><p>Dubai, Riyadh, Doha</p></div> -->
+      </div>
+    </div>
+    <div class="video-frame" data-parallax="0.03" role="button" tabindex="0" aria-label="Play team video">
+      <video class="bg" autoplay muted loop playsinline controls aria-label="Event technology team working together on-site">
+        <source src="New Video Final (Stock ver).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECHNOLOGY / EXPERIENCE ===== -->
+<!-- <section class="section-light tech-experience">
+  <div class="section-inner">
+    <div class="img-frame" data-parallax="0.03">
+      <img src="https://i.postimg.cc/cCwTxWfV/event-technology-team-working-together-on-site-at-a-large-conference-high-energy-candid-professio.jpg" alt="One World Rental team at work">
+    </div>
+    <div class="copy">
+      <h2>Technology Is What<br>We Rent. <span class="accent">Experience<br>Is What We Deliver.</span></h2>
+      <p>Our technical expertise goes beyond the hardware. We<br>become an extension of your event team, ensuring every<br>tablet, laptop, and interactive display functions perfectly<br>under the pressure of live events.</p>
+      <a class="discover-link" href="https://oneworldrental.com/services">
+        <span class="circle">➜</span>
+        <span>Discover What We Do</span>
+      </a>
+    </div>
+  </div>
+</section> -->
+
+<!-- ===== VALUES =====
+<section class="values">
+  <div class="section-inner">
+    <div class="values-grid">
+      <div class="value">
+        <div class="num">01</div>
+        <h3>Curiosity</h3>
+        <p>Always seeking the next breakthrough in event tech to better serve our clients.</p>
+      </div>
+      <div class="value">
+        <div class="num">02</div>
+        <h3>Collaboration</h3>
+        <p>Working across borders and timezones as one unified global team.</p>
+      </div>
+      <div class="value">
+        <div class="num">03</div>
+        <h3>Ownership</h3>
+        <p>Taking full accountability for the success of every event we support.</p>
+      </div>
+      <div class="value">
+        <div class="num">04</div>
+        <h3>Excellence</h3>
+        <p>Meticulous preparation that ensures flawless execution every single time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- ===== CAREERS CTA ===== -->
+<section class="careers-cta">
+  <div class="inner">
+    <h2>Need a Team You Can Rely On?</h2>
+    <p>From planning and logistics to onsite delivery and technical support, our global team is ready to help bring your next event together.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto: sales@oneworldrental.com">Talk to Our Team</a>
+      <a class="btn btn-white" href="https://oneworldrental.co.uk/">Explore Our Services</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FINAL CTA STRIP ===== -->
+<!-- <section class="final-cta">
+  <div class="wrap">
+    <h2>Need a Team That Can Make<br>Your Event Happen?</h2>
+    <a class="btn btn-primary" href="https://oneworldrental.com/contact-us">Talk To An Expert</a>
+  </div>
+</section> -->
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="https://i.postimg.cc/6QV9v4ty/oneworldrental.png" alt="One World Rental">
+        <p>The leading global provider of iPhone, iPad, and Laptop rentals for corporate events, conferences, and brand activations worldwide.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/company/oneworldrental-hiretabletsglobal" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.54 20.45H7.1V8.99H3.54v11.46Z"/></svg>
+          </a>
+          <a href="https://twitter.com/oneworldrental" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2.25h3.68l-8.04 9.19L24 21.75h-7.4l-5.8-7.58-6.64 7.58H.47l8.6-9.83L.01 2.25H7.6l5.24 6.93 6.06-6.93Zm-1.29 17.56h2.04L6.48 4.1H4.29l13.32 15.71Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/oneworldrental" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.88 11.85v-8.39H7.08V12h3.04V9.36c0-3 1.79-4.66 4.53-4.66 1.31 0 2.68.23 2.68.23v2.95h-1.51c-1.49 0-1.95.93-1.95 1.87V12h3.32l-.53 3.46h-2.79v8.39A12 12 0 0 0 24 12Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/oneworldrental" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="https://oneworldrental.com/ipad-rental">iPad Rental</a></li>
+          <li><a href="https://oneworldrental.com/iphone-rental">iPhone Rental</a></li>
+          <li><a href="https://oneworldrental.com/laptop-rental">Laptop Rental</a></li>
+          <li><a href="https://oneworldrental.com/macbook-pro-rental">MacBook Rental</a></li>
+          <li><a href="https://oneworldrental.com/virtual-reality-rental">VR &amp; AR Rental</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="https://oneworldrental.com/solutions">Events &amp; Conferences</a></li>
+          <li><a href="https://oneworldrental.com/event-technology-hire">Trade Shows</a></li>
+          <li><a href="https://oneworldrental.com/services">Brand Activations</a></li>
+          <li><a href="https://oneworldrental.com/it-rental-for-education">Employee Training</a></li>
+          <li><a href="https://oneworldrental.com/event-technology-hire">Hybrid Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg><a href="tel:+16027370011">+1 602 737 0011</a></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:sales@oneworldrental.com">sales@oneworldrental.com</a></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Global Operations Centers</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 One World Rental. All Rights Reserved.</p>
+      <div class="links">
+        <a href="https://oneworldrental.com/privacy-policy">Privacy Policy</a>
+        <a href="https://oneworldrental.com/terms-and-conditions">Terms of Service</a>
+        <a href="https://oneworldrental.com/cookie-policy">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  document.querySelector('.nav-toggle')?.addEventListener('click', function(){
+    document.querySelector('.nav-links').classList.toggle('is-open');
+  });
+
+  /*
+  // "Load More" is a placeholder — wire this up to reveal additional
+  // team-card markup (or fetch more from your CMS) when you have more members.
+  document.getElementById('loadMoreBtn')?.addEventListener('click', function(){
+    this.textContent = 'All Team Members Shown';
+    this.disabled = true;
+  });
+  */
+
+  const teamFilters = document.querySelectorAll('.team-filter');
+  const teamRegionByName = {
+    'Kashif Din': 'london',
+    'Dewnie Perera': 'london',
+    'Katy King': 'london',
+    'Rifat Shah': 'london',
+    'Alex Collins': 'london',
+    'Jon Barratt': 'london',
+    'Hannah Grantham': 'london',
+    'Mitchell Pearce': 'london',
+    'Andy Batten': 'london',
+    'Thor Denson': 'emea',
+    'Aaron Benarroch': 'emea',
+    'Julius Manikas': 'emea',
+    'Mike Day': 'apac',
+    'Chris Player': 'apac',
+    'Hirushan Siriwardhana': 'apac',
+    'Rex Wee': 'apac',
+    'Nisantha Jayakody': 'mena',
+    'Danyal Sheikh': 'mena'
+  };
+  const teamCards = document.querySelectorAll('.team-card');
+
+  teamFilters.forEach(function(filter){
+    filter.addEventListener('click', function(){
+      const selectedRegion = filter.dataset.filter;
+      teamFilters.forEach(function(button){
+        button.setAttribute('aria-pressed', String(button === filter));
+      });
+      teamCards.forEach(function(card){
+        const memberName = card.querySelector('h3')?.textContent.trim();
+        const memberRegion = teamRegionByName[memberName];
+        card.hidden = selectedRegion !== 'all' && memberRegion !== selectedRegion;
+      });
+    });
+  });
+
+  const revealTargets = document.querySelectorAll('.section-head, .team-filters, .team-card, .global-reach .copy, .global-reach .video-frame, .tech-experience .img-frame, .tech-experience .copy, .final-cta .wrap, footer');
+  const revealObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      entry.target.classList.toggle('is-visible', entry.isIntersecting);
+    });
+  }, {threshold:0.12});
+
+  revealTargets.forEach(function(target){
+    target.classList.add('scroll-reveal');
+    revealObserver.observe(target);
+  });
+
+  const parallaxMedia = document.querySelectorAll('[data-parallax]');
+  let parallaxFrame;
+
+  function updateParallax(){
+    parallaxFrame = undefined;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    parallaxMedia.forEach(function(item){
+      const bounds = item.getBoundingClientRect();
+      const distanceFromCenter = bounds.top + bounds.height / 2 - window.innerHeight / 2;
+      const speed = Number(item.dataset.parallax) || 0;
+      const offset = Math.max(-24, Math.min(24, distanceFromCenter * speed * -1));
+      item.style.setProperty('--parallax-offset', offset.toFixed(2));
+    });
+  }
+
+  function requestParallaxUpdate(){
+    if (!parallaxFrame) parallaxFrame = requestAnimationFrame(updateParallax);
+  }
+
+  window.addEventListener('scroll', requestParallaxUpdate, {passive:true});
+  window.addEventListener('resize', requestParallaxUpdate);
+  requestParallaxUpdate();
+
+</script>
+</body>
+</html>
